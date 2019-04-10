@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Landing Page -->
-    <title>Web Vizualization Dashboard (Latitude)</title>
+    <!-- Comparisons -->
+    <title>Comparisons</title>
 
     <!-- Import Bootstrap and style.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +22,7 @@
 <body style = "background-color:rgb(201, 217, 252)">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style = "background-color: #62aadd">
-        <a class="navbar-brand" href="./index.html">Latitude</a>
+        <a class="navbar-brand" href="#">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,49 +60,37 @@
     <br>
     <!-- Content -->
     <div class="container">
-        <div class="row">
-            <!-- Summary -->
-            <div class="col-lg-8">
-                <div class="box" style = "background-color: white">
-                    <h1>Summary: Latitude vs. X</h1>
-                    <hr>
-                    <p> <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" height="240" style="margin-right:10px;"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeawtherMap API to assemble a dataset on over 500 cities.</p>
-                    <br>
-                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
-                </div>
-            </div>
-            <!-- Vizualizations that link to each plot page -->
-            <div class="col-lg-4">
-                <div class="box" style = "background-color: white">
-                    <h2>Vizualizations</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="column">
-                            <a href="#">
+        <div class = "box" style="background-color:white">
+                <!-- Comparisons Grid set md-6 to allow 2 columns for lg,md screens and 1 for sm,xs scrns-->
+                <h1>Comparison: Latitude vs X</h1>
+                <hr>
+                <p>Click any plot to get an in-depth analysis</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="./plot-temp.html">
                                 <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" width = 100%>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig2.png" alt="Humidity" width = 100% >
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width = 100%>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig4.png" alt="WindSpeed" width = 100% >
-                            </a>
-                        </div>
+                    <div class="col-md-6">
+                        <a href="./plot-hum.html">
+                                <img src="./Resources/assets/images/Fig2.png" alt="Humidity" width = 100%>
+                        </a>
                     </div>
                 </div>
-            </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="./plot-cloud.html">
+                                <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width = 100%>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./plot-wind.html">
+                                <img src="./Resources/assets/images/Fig4.png" alt="Wind_Speed" width = 100%>
+                        </a>
+                    </div>
+                </div>
+            
         </div>
     </div>
 </body>

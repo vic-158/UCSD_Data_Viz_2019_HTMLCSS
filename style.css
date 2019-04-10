@@ -16,7 +16,7 @@
     padding: 0 4px;
   }
   
-  .column {
+.column {
     flex: 50%;
     max-width: 50%;
     padding: 0 4px;

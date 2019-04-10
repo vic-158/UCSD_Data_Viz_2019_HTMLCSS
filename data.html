@@ -22,7 +22,7 @@
 <body style = "background-color:rgb(201, 217, 252)">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style = "background-color: #62aadd">
-        <a class="navbar-brand" href="./index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,50 +59,12 @@
     </nav>
     <br>
     <!-- Content -->
-    <div class="container">
+    <div class="box" style="background-color: white">
+        <h1>Data</h1>
+        <hr>
+        <p>The following table includes all of the data used for plotting during this project.</p>
         <div class="row">
-            <!-- Summary -->
-            <div class="col-lg-8">
-                <div class="box" style = "background-color: white">
-                    <h1>Summary: Latitude vs. X</h1>
-                    <hr>
-                    <p> <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" height="240" style="margin-right:10px;"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeawtherMap API to assemble a dataset on over 500 cities.</p>
-                    <br>
-                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
-                </div>
-            </div>
-            <!-- Vizualizations that link to each plot page -->
-            <div class="col-lg-4">
-                <div class="box" style = "background-color: white">
-                    <h2>Vizualizations</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="column">
-                            <a href="#">
-                                <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" width = 100%>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig2.png" alt="Humidity" width = 100% >
-                            </a>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width = 100%>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig4.png" alt="WindSpeed" width = 100% >
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>

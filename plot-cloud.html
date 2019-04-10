@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Landing Page -->
-    <title>Web Vizualization Dashboard (Latitude)</title>
+    <!-- Temperature Plot -->
+    <title>Temperature Plot</title>
 
     <!-- Import Bootstrap and style.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -64,11 +64,11 @@
             <!-- Summary -->
             <div class="col-lg-8">
                 <div class="box" style = "background-color: white">
-                    <h1>Summary: Latitude vs. X</h1>
+                    <h1>Cloudiness</h1>
                     <hr>
-                    <p> <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" height="240" style="margin-right:10px;"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeawtherMap API to assemble a dataset on over 500 cities.</p>
+                    <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width=100%>
                     <br>
-                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
+                    <p>Based on the graphed data, there does not appear to be a strong correlation between latitude and cloudiness. However, it is interesting to note that the level of cloudiness appears to be measured in discrete units, as there is strong clustering around certain values (e.g. 0%, approx. 78%, and 100%).</p>
                 </div>
             </div>
             <!-- Vizualizations that link to each plot page -->
@@ -78,12 +78,12 @@
                     <hr>
                     <div class="row">
                         <div class="column">
-                            <a href="#">
+                            <a href="./plot-temp.html">
                                 <img src="./Resources/assets/images/Fig1.png" alt="Max_Temp" width = 100%>
                             </a>
                         </div>
                         <div class="column">
-                            <a href='#'>
+                            <a href='./plot-hum.html'>
                             <img src="./Resources/assets/images/Fig2.png" alt="Humidity" width = 100% >
                             </a>
                         </div>
@@ -91,12 +91,12 @@
                     <br>
                     <div class="row">
                         <div class="column">
-                            <a href='#'>
-                            <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width = 100%>
+                            <a href='./plot-cloud.html'>
+                            <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" width = 100% style = "border-color:slateblue; border-style:solid; border-width:2px;">
                             </a>
                         </div>
                         <div class="column">
-                            <a href='#'>
+                            <a href='./plot-wind.html'>
                             <img src="./Resources/assets/images/Fig4.png" alt="WindSpeed" width = 100% >
                             </a>
                         </div>
